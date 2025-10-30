@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Тревожные люди — обзор книги: сюжет, герои, факты." />
+  <meta name="keywords" content="Тревожные люди, Фредрик Бакман, обзор книги, герои, факты" />
+  <meta name="author" content="Феофанова П.А., ИСТбд-31" />
+  <title>Тревожные люди — Обзор</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <a href="index.html">Тревожные люди</a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Обзор</a>
+      <a href="characters.html">Герои</a>
+      <a href="facts.html">Факты</a>
+      <a href="#top">К началу</a>
+    </nav>
+    <div class="student-badge">
+      Феофанова П.А., ИСТбд-31
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section id="toc">
+      <h1>Обзор книги «Тревожные люди»</h1>
+      <p>Книга Фредрика Бакмана о непредсказуемости, уязвимости и человечности. На этой странице — краткое введение, далее — герои и факты.</p>
+      <ul>
+        <li><a href="#intro">Введение</a></li>
+        <li><a href="#plot">О сюжете</a></li>
+        <li><a href="#links">Ссылки</a></li>
+      </ul>
+    </section>
+
+    <section id="intro">
+      <h2>Введение</h2>
+      <p>
+        «Тревожные люди» — роман, где <strong>случайная встреча</strong> людей в кризисной ситуации заставляет каждого
+        взглянуть на себя по-новому. Книга о доверии, страхе и надежде.
+      </p>
+      <img src="https://picsum.photos/seed/bookleft/420/260" alt="Обложка книги (пример)" class="img-left" />
+      <p>
+        Изображение слева обтекается текстом. Вы увидите, как абзацы аккуратно перетекают вокруг картинки, создавая
+        удобный для чтения макет. Автор романа — Фредрик Бакман.
+      </p>
+      <div class="clear"></div>
+    </section>
+
+    <section id="plot">
+      <h2>О сюжете</h2>
+      <img src="https://picsum.photos/seed/bookright/420/260" alt="Сцена из книги (пример)" class="img-right" />
+      <h3>Кризисная ситуация</h3>
+      <p>
+        На первый взгляд — история о неудавшемся ограблении и заложниках. На деле — о том, как
+        страхи и ожидания управляют нашими решениями, а случайность соединяет судьбы.
+      </p>
+      <h3>Темы и мотивы</h3>
+      <ol>
+        <li>Тревога как часть повседневности</li>
+        <li>Взаимопонимание и эмпатия</li>
+        <li>Надежда и принятие</li>
+      </ol>
+      <div class="clear"></div>
+    </section>
+
+    <section id="links">
+      <h2>Полезные ссылки</h2>
+      <ul>
+        <li>
+          Внешняя ссылка: 
+          <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BA%D0%BC%D0%B0%D0%BD,_%D0%A4%D1%80%D0%B5%D0%B4%D1%80%D0%B8%D0%BA" target="_blank" rel="noopener">Фредрик Бакман (Википедия)</a>
+        </li>
+        <li>
+          Внешняя ссылка:
+          <a href="https://www.goodreads.com/book/show/49127718-anxious-people" target="_blank" rel="noopener">Anxious People на Goodreads</a>
+        </li>
+        <li>
+          Внутренняя ссылка-якорь: <a href="#toc">к содержанию</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="interact">
+      <h2>Интерактив (JS)</h2>
+      <p>Введите предложение для экспериментов с текстом:</p>
+      <textarea id="sentence" class="input" rows="3" placeholder="Введите предложение..."></textarea>
+      <div class="btn-row">
+        <button onclick="removeLongWords()">Удалить слова > 7 букв (alert)</button>
+        <button onclick="mostFrequentLetter()">Частая буква (alert)</button>
+        <button onclick="removeDigitsOpenNew()">Удалить цифры (новое окно)</button>
+      </div>
+      <div class="btn-row">
+        <button onclick="changeBackground('#fffbe6')">Фон: мягкий</button>
+        <button onclick="changeBackground('#e6fff8')">Фон: холодный</button>
+        <button onclick="changeBackground('#ffffff')">Фон: белый</button>
+      </div>
+      <p class="hint">Через 5 секунд страница автоматически прокрутится ниже (демо авто‑скролла).</p>
+      <button onclick="showCurrentDate()">Показать текущую дату (alert)</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">Наверх ↑</a>
+    <span>© «Тревожные люди» — учебный сайт</span>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    // Только на главной демонстрируем авто‑скролл
+    setTimeout(autoScroll, 5000);
+  </script>
+</body>
+</html>
